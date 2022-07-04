@@ -1,0 +1,188 @@
+
+<!--Sidebar starts-->
+
+<div class="wrapper d-flex align-items-stretch">
+ 
+  <nav id="sidebar" class="active" [class.active]="classApplied" *ngIf="menu_enabled == true" >
+<div class="sidebar-inner">
+  <div class="sidebar_header">
+    
+  </div>
+      
+<div class="sidebar-menu">
+<ul class="list-unstyled components my-2">
+
+
+<li class="nav_list">
+  <a routerLink="/"  routerLinkActive="active"  class="link-item">
+    <img src="../../../assets/images/list1.png">
+    <span class="title" *ngIf="CollapsMenutext">CRM</span>
+  </a>
+</li>
+
+<li class="nav_list">
+  <a routerLink="/" routerLinkActive="active"  class="link-item">
+    <img src="../../../assets/images/list2.png">
+    <span class="title" *ngIf="CollapsMenutext">Sales Tools</span>
+  </a>
+</li>
+
+<li class="nav_list">
+  <a routerLink="/" routerLinkActive="active"  class="link-item">
+    <img src="../../../assets/images/list3.png">
+    <span class="title" *ngIf="CollapsMenutext">Training Center</span>
+  </a>
+</li>
+
+<li class="nav_list">
+  <a routerLink="/" routerLinkActive="active"  class="link-item">
+    <img src="../../../assets/images/list4.png">
+    <span class="title" *ngIf="CollapsMenutext">Resource Center</span>
+  </a>
+</li>
+
+</ul>
+</div>
+<div class="arrow_icon_wrapper">
+  <div class="arrow_icon arrow_rotate">
+ 
+    <a id="sidebarCollapse" (click)="toggleMenu()">
+      <i class="bars icon"></i>
+    </a>
+  </div>
+  </div>
+
+
+</div>
+
+</nav>
+
+<!-- Page Content  -->
+<div id="content" class="">
+
+  <div id="page-main" class="p-0 small_menu" style="height: 100%;">
+      <iframe src='http://localhost:4200/' id="myIFrame" 
+      onload="resizeIframe(this)" style="width:100%;" frameborder="0" scrolling=""></iframe>
+     
+  </div>
+</div>
+
+</div>
+
+<!--Sidebar ends-->
+
+
+  <!-- <div class="gradient_background"></div>
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="d-flex">
+            <img
+              src="../../../assets/images/logo_trainning.png" />
+            <input
+              type="search"
+              placeholder="Search for anything"
+              class="form-control"
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="drop_sec">
+            <a href=""> <i class="heart outline icon"></i></a>
+            <a href=""> <i class="bell outline icon"></i></a>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown button
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light header">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../../../assets/images/logo_trainning.png" /></a>
+      <div class="drop_sec">
+        <a href=""> <i class="heart outline icon"></i></a>
+        <a href=""> <i class="bell outline icon"></i></a>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul> 
+        <form class="d-flex">
+          <input
+          type="search"
+          placeholder="Search for anything"
+          class="form-control"
+        />
+        </form>
+        
+      </div>
+     
+    </div>
+  </nav> -->
+
+   <!-- footer -->
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="footer_left">
+          <h4>Teach the world online</h4>
+          <h6>
+            Create an online video course, reach students across the globe,
+            and earn money 
+          </h6>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="footer_right">
+          <button type="button" class="btn btn-primary">
+            Teach on Udemy
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
