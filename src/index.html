@@ -48,12 +48,12 @@
 
         // If the window that sent this message is not http://localhost:4200, then
         // that message needs to be thrown out.
-        if (event.origin != "http://localhost:4200") {
-          console.log(
-            "The message came from some site we don't know. We're not processing it."
-          );
-          return;
-        }
+        // if (event.origin != "http://localhost:4200") {
+        //   console.log(
+        //     "The message came from some site we don't know. We're not processing it."
+        //   );
+        //   return;
+        // }
 
         // When one window sends a message, or data, to another window via
         // `parent.postMessage()`, the message (the first argument) in the
