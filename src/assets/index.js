@@ -38,7 +38,7 @@ function handleMessage(event) {
 
   // Show that the data was received.
   var myIFrame = document.getElementById("myIFrame");
-  if (dataFromChildIframe.user_age === 0) 
+  if (dataFromChildIframe.user_age == 0) 
     myIFrame.style["height"] = "100vh";
   else 
     myIFrame.style["height"] = dataFromChildIframe.user_age + "px";
